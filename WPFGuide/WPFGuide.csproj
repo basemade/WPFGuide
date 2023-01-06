@@ -55,15 +55,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ActiveViewManager.cs" />
     <Compile Include="PlaceInstance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="WPFGuide.addin" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainWindow.xaml">

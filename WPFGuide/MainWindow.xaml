@@ -1,9 +1,9 @@
-﻿<Window x:Class="_01_Guide.MainWindow"
+﻿<Window x:Class="WPFGuide.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:_01_Guide"
+        xmlns:local="clr-namespace:WPFGuide"
         mc:Ignorable="d"
         Title="gagaWindow" Height="auto" Width="300" ResizeMode="NoResize" SizeToContent="Height" >
     <!--原本：Title="MainWindow" Height="450" Width="800"-->
@@ -16,7 +16,7 @@
             <Label Content="Active view" Background="#FF93AFB8" Foreground="#FF9A4594" FontFamily="Franklin Gothic Demi" FontSize="20" Margin="0,0,29,0"/>
             <Label x:Name="label_Name" Margin="10,5,146,5" Height="27"/>
             <Label x:Name="label_Id" Margin="10,5,146,5" Height="27"/>
-            <Label x:Name="label_Template" Margin="10,5,146,5" Height="27"/>
+            <Label x:Name="label_Template" Margin="10,5,29,5" Height="27"/>
             <Separator/>
             <Label Content="Enter view name" Background="#FF93AFB8" Foreground="#FF9A4594" Margin="0,0,29,0"/>
             <TextBox x:Name="text" Margin="10" Background="#FFAC7B7B"/>

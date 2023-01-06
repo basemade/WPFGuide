@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 
-namespace _01_Guide
+
+//一個好的示範如何建立Transaction
+namespace WPFGuide
 {
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
     public class PlaceInstance : IExternalCommand
