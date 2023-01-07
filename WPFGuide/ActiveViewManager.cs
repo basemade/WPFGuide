@@ -35,7 +35,7 @@ namespace WPFGuide
                 //以上判斷式可簡寫成：
                 string vTemplate = vTemplateId.ToString() == "-1" ? "No template" : doc.GetElement(vTemplateId).Name;
 
-                MainWindow window = new MainWindow();
+                MainWindow window = new MainWindow(uidoc);
                 //初始創建 WPF UI 的視窗
                 window.label_Name.Content = $"Name：{vName}";
                 window.label_Id.Content = $"Id：{vId}";
