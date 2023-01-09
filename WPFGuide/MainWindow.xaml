@@ -14,7 +14,16 @@
     <Border Padding="15 5" Background="#FFAC7B7B">
         <StackPanel Background="#FFCACF94">
             <Label Content="Active view" Background="#FF93AFB8" Foreground="#FF9A4594" FontFamily="Franklin Gothic Demi" FontSize="20" Margin="0,0,29,0"/>
-            <Label x:Name="label_Name" Margin="10,5,146,5" Height="27"/>
+            <Label>
+                <Label.Content>active View</Label.Content>
+                <Label.Background>#FF93AFB8</Label.Background>
+                <Label.Foreground>#FF9A4594</Label.Foreground>
+                <Label.FontFamily>Franklin Gothic Demi</Label.FontFamily>
+                <Label.FontSize>20</Label.FontSize>
+                <Label.Margin>0,10,29,0</Label.Margin>
+            </Label>
+            <!--以上為2種XAML的寫法形式-->
+                <Label x:Name="label_Name" Margin="10,5,146,5" Height="27"/>
             <Label x:Name="label_Id" Margin="10,5,146,5" Height="27"/>
             <Label x:Name="label_Template" Margin="10,5,29,5" Height="27"/>
             <Separator/>
