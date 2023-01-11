@@ -28,7 +28,7 @@
             <Label x:Name="label_Template" Margin="10,5,29,5" Height="27"/>
             <Separator/>
             <Label Content="Enter view name" Background="#FF93AFB8" Foreground="#FF9A4594" Margin="0,0,29,0"/>
-            <TextBox x:Name="text" Margin="10" Background="#FFAC7B7B"/>
+            <TextBox x:Name="textgaga" Margin="10" Background="#FFAC7B7B"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Grid Width="250">
                     <Grid.ColumnDefinitions>

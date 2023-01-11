@@ -29,7 +29,7 @@ namespace WPFGuide
             using (Transaction t = new Transaction(doc, "set view name gaga"))
             {
                 t.Start();
-                doc.ActiveView.Name = text.Text;
+                doc.ActiveView.Name = textgaga.Text;
                 //在Textbox輸入的文字，指定成為ActiveView.Name
                 t.Commit();
             }
