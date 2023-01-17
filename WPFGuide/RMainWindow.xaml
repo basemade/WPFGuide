@@ -1,0 +1,47 @@
+﻿<!--PPMainWindow.xaml，從字母P開始排序，進行測試-->
+<!--往後測試請以字母P的檔案去clone-->
+    <Window x:Class="WPFGuide.RRMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFGuide"
+        mc:Ignorable="d"
+        Title="gagaWindow" Height="auto" Width="300" ResizeMode="NoResize" SizeToContent="Height" >
+
+    <!--    
+    <StackPanel>
+        <Button Margin="5" Click="buttonVictor_Click">
+            <TextBlock Text="Hello"/>
+            <Image Source="Resources/smile.png" Width="100" />
+        </Button>
+    </StackPanel>
+    -->
+    <!--Button 屬於 ContentControl 族，本身設計就是由單一元素充當其內容-->
+    <!--因此上例1個Button有2個內容會報錯-->
+
+   
+        
+    <!--因此要這樣分開2個Button放-->
+    <StackPanel>
+        <Button Margin="5" Click="buttonVictor_Click">
+            <TextBlock Text="Hello"/>
+        </Button>
+        <Button Margin="5" Click="buttonVictor_Click">
+            <Image Source="Resources/smile.png" Width="100" />
+            <!--加入圖片方式：1.加入資源 2.屬性_建置動作改成Resource 3.直接從資源拖進XAML當中-->
+            <!--Image Source="/WPFGuide;component/Resources/smile.png"-->
+            <!--4.刪掉前面的路徑-->
+        </Button>
+    </StackPanel>
+    <!--ps.ItemsControl族 可以1元素容納多條內容，見範例Q-->
+
+        
+        
+
+    <!--若真的需要在一個Button裡放2個內容怎麼辦?-->
+    <!--記得 控件 的內容也可以是 控件-->
+    <!--可以利用佈局控件(Panel族)把圖片和文字包起來，再作為Button的內容 -->
+    <!--https://www.cnblogs.com/Leozi/p/10811962.html-->
+
+</Window>
