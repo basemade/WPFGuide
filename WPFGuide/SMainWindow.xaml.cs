@@ -9,6 +9,7 @@ using System.Windows.Media;
 namespace WPFGuide
 {
     //ListBox的自動包裝機制
+    //P.56
     //兩個簡單的屬性：DisplayMemberPath, ItemsSource
     
     //ps.1 getset 與物件實體化
