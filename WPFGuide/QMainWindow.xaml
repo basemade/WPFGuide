@@ -21,4 +21,25 @@
         </ListBox>
     </Grid>
 
+        
+    <!--ItemsControl 能夠使用對應的 ItemContainer 自動包裝多條內容-->
+    <!--因此不用像ContentControl一樣 1個控件對應1個內容(如下) -->
+
+
+        <!--
+    <Grid>
+        <ListBox Margin="5">
+            <ListBoxItem>
+                <Button x:Name="buttonMess" Content="Mess"/>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Button x:Name="buttonOwen" Content="Owen"/>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Button x:Name="buttonVictor" Content="Victor" Click="buttonVictor_Click"/>
+            </ListBoxItem>
+        </ListBox>
+    </Grid>
+    -->
+
 </Window>
