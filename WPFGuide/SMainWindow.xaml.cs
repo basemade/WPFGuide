@@ -12,7 +12,7 @@ namespace WPFGuide
     //P.56
     //兩個簡單的屬性：DisplayMemberPath, ItemsSource
     
-    //ps.1 getset 與物件實體化
+    //ps.1 getset 與 物件實體化的2種方式
 
     //ps2.此範例尚未分離資料成為獨立cs
 
@@ -28,16 +28,6 @@ namespace WPFGuide
             doc = uidoc.Document;
             InitializeComponent();
 
-            List<gagaEmployee2> empList_2 = new List<gagaEmployee2>()
-            {
-                new gagaEmployee2(){theName_2 = "Timmy", Age_2 = 300},
-                new gagaEmployee2(){theName_2 = "Tommy", Age_2 = 260},
-                new gagaEmployee2(){theName_2 = "Guomy", Age_2 = 240},
-                new gagaEmployee2(){theName_2 = "Kammy", Age_2 = 340},
-                new gagaEmployee2(){theName_2 = "Apey", Age_2 = 300},
-                new gagaEmployee2(){theName_2 = "Ronny", Age_2 = 280}
-            };
-
             List<gagaEmployee1> empList_1 = new List<gagaEmployee1>()
             {
                 new gagaEmployee1("Timma", 30),
@@ -49,19 +39,27 @@ namespace WPFGuide
 
             };
 
+            List<gagaEmployee2> empList_2 = new List<gagaEmployee2>()
+            {
+                new gagaEmployee2(){theName_2 = "Timmy", Age_2 = 300},
+                new gagaEmployee2(){theName_2 = "Tommy", Age_2 = 260},
+                new gagaEmployee2(){theName_2 = "Guomy", Age_2 = 240},
+                new gagaEmployee2(){theName_2 = "Kammy", Age_2 = 340},
+                new gagaEmployee2(){theName_2 = "Apey", Age_2 = 300},
+                new gagaEmployee2(){theName_2 = "Ronny", Age_2 = 280}
+            };
+
+            lstBoxEmployee1.DisplayMemberPath = "Name";
+            //lstBoxEmployee2.SelectedValuePath = "Age";
+            lstBoxEmployee1.ItemsSource = empList_1;
+
             lstBoxEmployee2.DisplayMemberPath = "theName_2";
-            lstBoxEmployee2.SelectedValuePath = "Age_2";
+            //lstBoxEmployee2.SelectedValuePath = "Age_2";
             lstBoxEmployee2.ItemsSource = empList_2;
-        }
-        
 
-        public class gagaEmployee2
-        {
-            public string theName_2 { get; set; }
-            //這裡一定要加上get set，不然沒有值
-            public int Age_2 { get; set; }
         }
 
+        //物件實體化的方法1
         public class gagaEmployee1
         {
             public gagaEmployee1(string name, int age)
@@ -72,6 +70,14 @@ namespace WPFGuide
 
             public string Name { get; set; }
             public int Age { get; set; }
+        }
+
+        //物件實體化的方法2
+        public class gagaEmployee2
+        {
+            public string theName_2 { get; set; }
+            //這裡一定要加上get set，不然沒有值
+            public int Age_2 { get; set; }
         }
 
     }

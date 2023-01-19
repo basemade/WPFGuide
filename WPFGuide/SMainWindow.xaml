@@ -10,8 +10,9 @@
         Title="gagaWindow" Height="auto" Width="300" ResizeMode="NoResize" SizeToContent="Height" >
 
 
-
+    <StackPanel>
+        <ListBox x:Name="lstBoxEmployee1" Margin="5"/>
         <ListBox x:Name="lstBoxEmployee2" Margin="5"/>
-
+    </StackPanel>
 
 </Window>
