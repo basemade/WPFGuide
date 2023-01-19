@@ -38,6 +38,17 @@ namespace WPFGuide
                 new gagaEmployee2(){theName_2 = "Ronny", Age_2 = 280}
             };
 
+            List<gagaEmployee1> empList_1 = new List<gagaEmployee1>()
+            {
+                new gagaEmployee1("Timma", 30),
+                new gagaEmployee1("Tomma", 26),
+                new gagaEmployee1("Guoma", 24),
+                new gagaEmployee1("Kamma", 34),
+                new gagaEmployee1("Apea", 30),
+                new gagaEmployee1("Ronn", 28),
+
+            };
+
             lstBoxEmployee2.DisplayMemberPath = "theName_2";
             lstBoxEmployee2.SelectedValuePath = "Age_2";
             lstBoxEmployee2.ItemsSource = empList_2;
@@ -50,5 +61,18 @@ namespace WPFGuide
             //這裡一定要加上get set，不然沒有值
             public int Age_2 { get; set; }
         }
+
+        public class gagaEmployee1
+        {
+            public gagaEmployee1(string name, int age)
+            {
+                Name = name;
+                Age = age;
+            }
+
+            public string Name { get; set; }
+            public int Age { get; set; }
+        }
+
     }
 }
