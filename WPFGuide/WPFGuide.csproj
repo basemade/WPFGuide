@@ -56,7 +56,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="STestData.cs" />
+    <Compile Include="TMainWindow.xaml.cs">
+      <DependentUpon>TMainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TTest.cs" />
+    <Compile Include="TTestData.cs" />
     <Compile Include="STest.cs" />
     <Compile Include="SMainWindow.xaml.cs">
       <DependentUpon>SMainWindow.xaml</DependentUpon>
@@ -88,6 +92,10 @@
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TMainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="SMainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
